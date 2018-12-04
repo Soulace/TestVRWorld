@@ -115,7 +115,7 @@ public class TheLabRenderer_Settings : EditorWindow
 			updated = true;
 		}
 
-		var devices = UnityEditorInternal.VR.VREditor.GetVREnabledDevices(BuildTargetGroup.Standalone);
+		/*var devices = UnityEditorInternal.VR.VREditor.GetVREnabledDevices(BuildTargetGroup.Standalone);
 		var hasOpenVR = false;
 		foreach (var device in devices)
 			if (device.ToLower() == "openvr")
@@ -137,7 +137,7 @@ public class TheLabRenderer_Settings : EditorWindow
 				updated = true;
 			}
 			UnityEditorInternal.VR.VREditor.SetVREnabledDevices(BuildTargetGroup.Standalone, newDevices);
-		}
+		}*/
 
 		if (updated)
 			Debug.Log("Switching to native OpenVR support.");
